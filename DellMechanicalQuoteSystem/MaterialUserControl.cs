@@ -12,9 +12,32 @@ namespace DellMechanicalQuoteSystem
 {
     public partial class MaterialUserControl : UserControl
     {
-        public MaterialUserControl()
+        public int possition { get; set; }
+
+        public MaterialUserControl(int pos)
         {
             InitializeComponent();
+            possition = pos;
+        }
+
+        public int quantiy
+        {
+            get
+            {
+                return (int)numQuantity.Value;
+            }
+        }
+        public string materialType
+        {
+            get
+            {
+                return cmbMaterialType.Text;
+            }
+        }
+
+        private void lblLabourCost_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

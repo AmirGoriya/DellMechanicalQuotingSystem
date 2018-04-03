@@ -28,84 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.numQuantity = new System.Windows.Forms.NumericUpDown();
+            this.cmbMaterialType = new System.Windows.Forms.ComboBox();
+            this.lblUnitCost = new System.Windows.Forms.Label();
+            this.lblLabourUnitCost = new System.Windows.Forms.Label();
+            this.lblMaterialCost = new System.Windows.Forms.Label();
+            this.lblLabourCost = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
             this.SuspendLayout();
             // 
-            // numericUpDown1
+            // numQuantity
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(24, 48);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(53, 26);
-            this.numericUpDown1.TabIndex = 0;
+            this.numQuantity.Location = new System.Drawing.Point(21, 15);
+            this.numQuantity.Name = "numQuantity";
+            this.numQuantity.Size = new System.Drawing.Size(53, 26);
+            this.numQuantity.TabIndex = 0;
             // 
-            // comboBox1
+            // cmbMaterialType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(101, 46);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(285, 28);
-            this.comboBox1.TabIndex = 1;
+            this.cmbMaterialType.FormattingEnabled = true;
+            this.cmbMaterialType.Location = new System.Drawing.Point(117, 15);
+            this.cmbMaterialType.Name = "cmbMaterialType";
+            this.cmbMaterialType.Size = new System.Drawing.Size(285, 28);
+            this.cmbMaterialType.TabIndex = 1;
             // 
-            // label1
+            // lblUnitCost
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(434, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 22);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.lblUnitCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblUnitCost.Location = new System.Drawing.Point(408, 12);
+            this.lblUnitCost.Name = "lblUnitCost";
+            this.lblUnitCost.Padding = new System.Windows.Forms.Padding(5);
+            this.lblUnitCost.Size = new System.Drawing.Size(105, 32);
+            this.lblUnitCost.TabIndex = 2;
+            this.lblUnitCost.Text = "label1";
             // 
-            // label2
+            // lblLabourUnitCost
             // 
-            this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(662, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 22);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.lblLabourUnitCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblLabourUnitCost.Location = new System.Drawing.Point(653, 11);
+            this.lblLabourUnitCost.Name = "lblLabourUnitCost";
+            this.lblLabourUnitCost.Padding = new System.Windows.Forms.Padding(5);
+            this.lblLabourUnitCost.Size = new System.Drawing.Size(107, 32);
+            this.lblLabourUnitCost.TabIndex = 3;
+            this.lblLabourUnitCost.Text = "label2";
             // 
-            // label4
+            // lblMaterialCost
             // 
-            this.label4.AutoSize = true;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(545, 49);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 22);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
+            this.lblMaterialCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMaterialCost.Location = new System.Drawing.Point(526, 11);
+            this.lblMaterialCost.Name = "lblMaterialCost";
+            this.lblMaterialCost.Padding = new System.Windows.Forms.Padding(5);
+            this.lblMaterialCost.Size = new System.Drawing.Size(113, 33);
+            this.lblMaterialCost.TabIndex = 5;
+            this.lblMaterialCost.Text = "label4";
+            // 
+            // lblLabourCost
+            // 
+            this.lblLabourCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblLabourCost.Location = new System.Drawing.Point(777, 11);
+            this.lblLabourCost.Name = "lblLabourCost";
+            this.lblLabourCost.Padding = new System.Windows.Forms.Padding(5);
+            this.lblLabourCost.Size = new System.Drawing.Size(107, 32);
+            this.lblLabourCost.TabIndex = 6;
+            this.lblLabourCost.Text = "label1";
             // 
             // MaterialUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.lblLabourCost);
+            this.Controls.Add(this.lblMaterialCost);
+            this.Controls.Add(this.lblLabourUnitCost);
+            this.Controls.Add(this.lblUnitCost);
+            this.Controls.Add(this.cmbMaterialType);
+            this.Controls.Add(this.numQuantity);
             this.Name = "MaterialUserControl";
-            this.Size = new System.Drawing.Size(758, 102);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.Size = new System.Drawing.Size(899, 54);
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown numQuantity;
+        private System.Windows.Forms.ComboBox cmbMaterialType;
+        private System.Windows.Forms.Label lblUnitCost;
+        private System.Windows.Forms.Label lblLabourUnitCost;
+        private System.Windows.Forms.Label lblMaterialCost;
+        private System.Windows.Forms.Label lblLabourCost;
     }
 }

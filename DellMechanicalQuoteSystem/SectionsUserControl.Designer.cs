@@ -35,11 +35,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtSectionTitle
             // 
-            this.txtSectionTitle.Location = new System.Drawing.Point(229, 59);
+            this.txtSectionTitle.Location = new System.Drawing.Point(323, 46);
             this.txtSectionTitle.Name = "txtSectionTitle";
             this.txtSectionTitle.Size = new System.Drawing.Size(267, 26);
             this.txtSectionTitle.TabIndex = 0;
@@ -47,7 +48,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(319, 29);
+            this.label1.Location = new System.Drawing.Point(413, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 20);
             this.label1.TabIndex = 1;
@@ -56,7 +57,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 110);
+            this.label2.Location = new System.Drawing.Point(26, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 20);
             this.label2.TabIndex = 2;
@@ -65,7 +66,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(187, 110);
+            this.label3.Location = new System.Drawing.Point(192, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 20);
             this.label3.TabIndex = 3;
@@ -73,17 +74,17 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(423, 110);
+            this.label4.Location = new System.Drawing.Point(409, 115);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 20);
+            this.label4.Size = new System.Drawing.Size(100, 46);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Unit Price";
+            this.label4.Text = "Material Unit Cost";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(526, 110);
+            this.label5.Location = new System.Drawing.Point(534, 139);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 20);
             this.label5.TabIndex = 5;
@@ -92,17 +93,27 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(647, 110);
+            this.label6.Location = new System.Drawing.Point(784, 139);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 20);
             this.label6.TabIndex = 6;
             this.label6.Text = "Labour Cost";
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(662, 111);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 53);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Labour Unit Cost";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SectionUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -111,7 +122,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSectionTitle);
             this.Name = "SectionUserControl";
-            this.Size = new System.Drawing.Size(758, 156);
+            this.Size = new System.Drawing.Size(901, 172);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,5 +137,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

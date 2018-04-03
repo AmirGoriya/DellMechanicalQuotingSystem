@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tabSections = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabSection1 = new System.Windows.Forms.TabPage();
             this.btnAddMaterial = new System.Windows.Forms.Button();
             this.txtExtraCost = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -47,22 +47,23 @@
             // 
             // tabSections
             // 
-            this.tabSections.Controls.Add(this.tabPage1);
+            this.tabSections.Controls.Add(this.tabSection1);
             this.tabSections.Location = new System.Drawing.Point(210, 26);
             this.tabSections.Name = "tabSections";
             this.tabSections.SelectedIndex = 0;
-            this.tabSections.Size = new System.Drawing.Size(787, 552);
+            this.tabSections.Size = new System.Drawing.Size(946, 552);
             this.tabSections.TabIndex = 0;
             // 
-            // tabPage1
+            // tabSection1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(10);
-            this.tabPage1.Size = new System.Drawing.Size(779, 519);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabSection1.AutoScroll = true;
+            this.tabSection1.Location = new System.Drawing.Point(4, 29);
+            this.tabSection1.Name = "tabSection1";
+            this.tabSection1.Padding = new System.Windows.Forms.Padding(10);
+            this.tabSection1.Size = new System.Drawing.Size(938, 519);
+            this.tabSection1.TabIndex = 0;
+            this.tabSection1.Text = "Section 1";
+            this.tabSection1.UseVisualStyleBackColor = true;
             // 
             // btnAddMaterial
             // 
@@ -73,6 +74,7 @@
             this.btnAddMaterial.TabIndex = 5;
             this.btnAddMaterial.Text = "Add Material";
             this.btnAddMaterial.UseVisualStyleBackColor = true;
+            this.btnAddMaterial.Click += new System.EventHandler(this.btnAddMaterial_Click);
             // 
             // txtExtraCost
             // 
@@ -193,13 +195,14 @@
             this.btnPrintQuote.TabIndex = 14;
             this.btnPrintQuote.Text = "Print Quote";
             this.btnPrintQuote.UseVisualStyleBackColor = true;
+            this.btnPrintQuote.Click += new System.EventHandler(this.btnPrintQuote_Click);
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1010, 697);
+            this.ClientSize = new System.Drawing.Size(1173, 697);
             this.Controls.Add(this.btnPrintQuote);
             this.Controls.Add(this.btnNewSection);
             this.Controls.Add(this.txtTotalCost);
@@ -225,7 +228,7 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabSections;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabSection1;
         private System.Windows.Forms.Button btnAddMaterial;
         private System.Windows.Forms.TextBox txtExtraCost;
         private System.Windows.Forms.Label label10;
