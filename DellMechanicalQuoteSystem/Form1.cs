@@ -51,6 +51,7 @@ namespace DellMechanicalQuoteSystem
             tp.AutoScroll = true;
             tp.Controls.Add(topUC);
             tp.Controls.Add(materialUC);
+            tp.BackColor = System.Drawing.Color.White;
             tabSections.TabPages.Add(tp);
             tabSections.SelectedTab = tp;
 
@@ -113,5 +114,6 @@ namespace DellMechanicalQuoteSystem
             //sets the selected tabs title to the section title
             curTab.Text = curTab.Controls[0].Controls["txtSectionTitle"].Text;
         }
+
     }
 }

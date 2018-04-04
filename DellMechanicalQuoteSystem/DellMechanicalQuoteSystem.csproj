@@ -64,6 +64,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quote.cs" />
+    <Compile Include="Section.cs" />
     <Compile Include="SectionsUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

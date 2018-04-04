@@ -15,21 +15,12 @@ namespace DellMechanicalQuoteSystem
         public MaterialUserControl()
         {
             InitializeComponent();
+            numQuantity.Enter += new EventHandler(numQuantity_Enter);
         }
 
-        public int quantiy
+        private void numQuantity_Enter(object sender, EventArgs e)
         {
-            get
-            {
-                return (int)numQuantity.Value;
-            }
-        }
-        public string materialType
-        {
-            get
-            {
-                return cmbMaterialType.Text;
-            }
+            numQuantity.Select(0, numQuantity.Text.Length);
         }
 
         private void cmbMaterialType_SelectedIndexChanged(object sender, EventArgs e)

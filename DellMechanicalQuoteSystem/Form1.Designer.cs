@@ -62,29 +62,29 @@
             // tabSections
             // 
             this.tabSections.Controls.Add(this.tabSection1);
-            this.tabSections.Location = new System.Drawing.Point(140, 17);
-            this.tabSections.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabSections.Location = new System.Drawing.Point(140, 31);
+            this.tabSections.Margin = new System.Windows.Forms.Padding(2);
             this.tabSections.Name = "tabSections";
             this.tabSections.SelectedIndex = 0;
-            this.tabSections.Size = new System.Drawing.Size(631, 366);
+            this.tabSections.Size = new System.Drawing.Size(626, 366);
             this.tabSections.TabIndex = 0;
             // 
             // tabSection1
             // 
             this.tabSection1.AutoScroll = true;
+            this.tabSection1.BackColor = System.Drawing.SystemColors.Window;
             this.tabSection1.Location = new System.Drawing.Point(4, 22);
-            this.tabSection1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabSection1.Margin = new System.Windows.Forms.Padding(2);
             this.tabSection1.Name = "tabSection1";
             this.tabSection1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.tabSection1.Size = new System.Drawing.Size(623, 340);
+            this.tabSection1.Size = new System.Drawing.Size(618, 340);
             this.tabSection1.TabIndex = 0;
             this.tabSection1.Text = "Section 1";
-            this.tabSection1.UseVisualStyleBackColor = true;
             // 
             // btnAddMaterial
             // 
-            this.btnAddMaterial.Location = new System.Drawing.Point(617, 389);
-            this.btnAddMaterial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddMaterial.Location = new System.Drawing.Point(613, 401);
+            this.btnAddMaterial.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddMaterial.Name = "btnAddMaterial";
             this.btnAddMaterial.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnAddMaterial.Size = new System.Drawing.Size(153, 35);
@@ -95,8 +95,8 @@
             // 
             // txtExtraCost
             // 
-            this.txtExtraCost.Location = new System.Drawing.Point(17, 281);
-            this.txtExtraCost.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtExtraCost.Location = new System.Drawing.Point(17, 295);
+            this.txtExtraCost.Margin = new System.Windows.Forms.Padding(2);
             this.txtExtraCost.Name = "txtExtraCost";
             this.txtExtraCost.Size = new System.Drawing.Size(104, 20);
             this.txtExtraCost.TabIndex = 11;
@@ -106,7 +106,7 @@
             this.lblSecLabourCost.BackColor = System.Drawing.SystemColors.Menu;
             this.lblSecLabourCost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblSecLabourCost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblSecLabourCost.Location = new System.Drawing.Point(287, 437);
+            this.lblSecLabourCost.Location = new System.Drawing.Point(287, 451);
             this.lblSecLabourCost.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSecLabourCost.Name = "lblSecLabourCost";
             this.lblSecLabourCost.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -117,7 +117,7 @@
             // 
             this.label11.BackColor = System.Drawing.SystemColors.Menu;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Location = new System.Drawing.Point(487, 437);
+            this.label11.Location = new System.Drawing.Point(487, 451);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -128,7 +128,7 @@
             // 
             this.lblSecMaterialCost.BackColor = System.Drawing.SystemColors.Menu;
             this.lblSecMaterialCost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblSecMaterialCost.Location = new System.Drawing.Point(187, 437);
+            this.lblSecMaterialCost.Location = new System.Drawing.Point(187, 451);
             this.lblSecMaterialCost.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSecMaterialCost.Name = "lblSecMaterialCost";
             this.lblSecMaterialCost.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -139,7 +139,7 @@
             // 
             this.lblSecLabourHours.BackColor = System.Drawing.SystemColors.Menu;
             this.lblSecLabourHours.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblSecLabourHours.Location = new System.Drawing.Point(387, 437);
+            this.lblSecLabourHours.Location = new System.Drawing.Point(387, 451);
             this.lblSecLabourHours.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSecLabourHours.Name = "lblSecLabourHours";
             this.lblSecLabourHours.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -150,7 +150,7 @@
             // 
             this.lblTotalMaterial.BackColor = System.Drawing.SystemColors.Menu;
             this.lblTotalMaterial.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTotalMaterial.Location = new System.Drawing.Point(18, 54);
+            this.lblTotalMaterial.Location = new System.Drawing.Point(18, 68);
             this.lblTotalMaterial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalMaterial.Name = "lblTotalMaterial";
             this.lblTotalMaterial.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -161,7 +161,7 @@
             // 
             this.lblTotalLabourHours.BackColor = System.Drawing.SystemColors.Menu;
             this.lblTotalLabourHours.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTotalLabourHours.Location = new System.Drawing.Point(17, 169);
+            this.lblTotalLabourHours.Location = new System.Drawing.Point(17, 183);
             this.lblTotalLabourHours.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalLabourHours.Name = "lblTotalLabourHours";
             this.lblTotalLabourHours.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -172,7 +172,7 @@
             // 
             this.lblTotalLabour.BackColor = System.Drawing.SystemColors.Menu;
             this.lblTotalLabour.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTotalLabour.Location = new System.Drawing.Point(18, 109);
+            this.lblTotalLabour.Location = new System.Drawing.Point(18, 123);
             this.lblTotalLabour.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalLabour.Name = "lblTotalLabour";
             this.lblTotalLabour.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -181,10 +181,10 @@
             // 
             // btnNewSection
             // 
-            this.btnNewSection.Location = new System.Drawing.Point(19, 385);
-            this.btnNewSection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNewSection.Location = new System.Drawing.Point(19, 399);
+            this.btnNewSection.Margin = new System.Windows.Forms.Padding(2);
             this.btnNewSection.Name = "btnNewSection";
-            this.btnNewSection.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.btnNewSection.Padding = new System.Windows.Forms.Padding(3);
             this.btnNewSection.Size = new System.Drawing.Size(103, 34);
             this.btnNewSection.TabIndex = 13;
             this.btnNewSection.Text = "New Section";
@@ -193,10 +193,10 @@
             // 
             // btnPrintQuote
             // 
-            this.btnPrintQuote.Location = new System.Drawing.Point(19, 432);
-            this.btnPrintQuote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPrintQuote.Location = new System.Drawing.Point(19, 446);
+            this.btnPrintQuote.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrintQuote.Name = "btnPrintQuote";
-            this.btnPrintQuote.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.btnPrintQuote.Padding = new System.Windows.Forms.Padding(3);
             this.btnPrintQuote.Size = new System.Drawing.Size(103, 33);
             this.btnPrintQuote.TabIndex = 14;
             this.btnPrintQuote.Text = "Print Quote";
@@ -206,7 +206,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 38);
+            this.label1.Location = new System.Drawing.Point(31, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
@@ -216,7 +216,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(201, 419);
+            this.label2.Location = new System.Drawing.Point(201, 433);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 13);
@@ -226,7 +226,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 263);
+            this.label3.Location = new System.Drawing.Point(39, 277);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
@@ -236,7 +236,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(36, 153);
+            this.label4.Location = new System.Drawing.Point(36, 167);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
@@ -246,7 +246,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 92);
+            this.label5.Location = new System.Drawing.Point(35, 106);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
@@ -255,8 +255,8 @@
             // 
             // txtDeductions
             // 
-            this.txtDeductions.Location = new System.Drawing.Point(19, 323);
-            this.txtDeductions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDeductions.Location = new System.Drawing.Point(19, 337);
+            this.txtDeductions.Margin = new System.Windows.Forms.Padding(2);
             this.txtDeductions.Name = "txtDeductions";
             this.txtDeductions.Size = new System.Drawing.Size(103, 20);
             this.txtDeductions.TabIndex = 20;
@@ -264,7 +264,7 @@
             // lblSecTotal
             // 
             this.lblSecTotal.AutoSize = true;
-            this.lblSecTotal.Location = new System.Drawing.Point(523, 421);
+            this.lblSecTotal.Location = new System.Drawing.Point(523, 435);
             this.lblSecTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSecTotal.Name = "lblSecTotal";
             this.lblSecTotal.Size = new System.Drawing.Size(31, 13);
@@ -274,7 +274,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(401, 421);
+            this.label7.Location = new System.Drawing.Point(401, 435);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(71, 13);
@@ -284,7 +284,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(305, 421);
+            this.label8.Location = new System.Drawing.Point(305, 435);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(64, 13);
@@ -294,7 +294,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(39, 305);
+            this.label15.Location = new System.Drawing.Point(39, 319);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(61, 13);
@@ -304,7 +304,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(36, 214);
+            this.label16.Location = new System.Drawing.Point(36, 228);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(60, 13);
@@ -315,7 +315,7 @@
             // 
             this.lblTotalCost.BackColor = System.Drawing.SystemColors.Menu;
             this.lblTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTotalCost.Location = new System.Drawing.Point(19, 230);
+            this.lblTotalCost.Location = new System.Drawing.Point(19, 244);
             this.lblTotalCost.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalCost.Name = "lblTotalCost";
             this.lblTotalCost.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -326,7 +326,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 6);
+            this.label6.Location = new System.Drawing.Point(9, 20);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 24);
@@ -337,7 +337,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(315, 389);
+            this.label9.Location = new System.Drawing.Point(315, 403);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(128, 24);
@@ -346,8 +346,8 @@
             // 
             // btCalculateSection
             // 
-            this.btCalculateSection.Location = new System.Drawing.Point(617, 437);
-            this.btCalculateSection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btCalculateSection.Location = new System.Drawing.Point(613, 451);
+            this.btCalculateSection.Margin = new System.Windows.Forms.Padding(2);
             this.btCalculateSection.Name = "btCalculateSection";
             this.btCalculateSection.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btCalculateSection.Size = new System.Drawing.Size(153, 35);
@@ -361,7 +361,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(782, 482);
+            this.ClientSize = new System.Drawing.Size(785, 505);
             this.Controls.Add(this.btCalculateSection);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
@@ -389,7 +389,7 @@
             this.Controls.Add(this.btnAddMaterial);
             this.Controls.Add(this.lblSecLabourCost);
             this.Controls.Add(this.tabSections);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "formMain";
             this.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Text = "Dell Mechanical Quote System";
