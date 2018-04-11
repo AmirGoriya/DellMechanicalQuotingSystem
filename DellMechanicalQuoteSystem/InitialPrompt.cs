@@ -12,14 +12,28 @@ namespace DellMechanicalQuoteSystem
 {
     public partial class InitialPrompt : Form
     {
+
         public InitialPrompt()
         {
             InitializeComponent();
         }
 
+        private void btnQuote_Click(object sender, EventArgs e)
+        {
+            //launches the main quoting form and closes the initialPrompt
+            MainForm mainForm =  new MainForm(txtTitle.Text);
+            this.Hide();
+            mainForm.ShowDialog();
+            this.Close();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //launches the main quoting form and closes the initialPrompt
+            MaterialManagement materialMgmt =  new MaterialManagement();
+            this.Hide();
+            materialMgmt.ShowDialog();
+            this.Close();
         }
     }
 }

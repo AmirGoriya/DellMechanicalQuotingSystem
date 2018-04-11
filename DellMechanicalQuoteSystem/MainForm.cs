@@ -11,19 +11,22 @@ using System.Diagnostics;
 
 namespace DellMechanicalQuoteSystem
 {
-    public partial class formMain : Form
+    public partial class MainForm : Form
     {
+        Quote quote;
 
         //holds the possition for controls to be placed on each tab
         int[] controlPossitions = new int[80];
 
-        //holds the user controls that are dynmically added to the form
+        //holds the user controls that are dynamically added to the form
         SectionUserControl topUC;
         MaterialUserControl materialUC;
 
-        public formMain()
+        public MainForm(string title)
         {
             InitializeComponent();
+
+            quote = new Quote(title);
 
             //inittializes new usercontrols
             topUC = new SectionUserControl();
@@ -113,6 +116,29 @@ namespace DellMechanicalQuoteSystem
             TabPage curTab = tabSections.SelectedTab;
             //sets the selected tabs title to the section title
             curTab.Text = curTab.Controls[0].Controls["txtSectionTitle"].Text;
+
+            //holds all the user controls in the tab
+            UserControl.ControlCollection ucs = curTab.Controls;
+
+            //iterates through user controls
+            foreach (UserControl uc in ucs) {
+
+
+                if (uc.ToString() == "DellMechanicalQuoteSystem.SectionUserControl")
+                {
+                    Debug.WriteLine(uc.Controls["txtSectionTitle"].Text);
+                    Debug.WriteLine(quote.title);
+
+                }
+                else
+                {
+
+                    Debug.WriteLine(uc.Controls["numQuantity"].Text);
+                    Debug.WriteLine(uc.Controls["cmbMaterialType"].Text);
+                    Debug.WriteLine("\n");
+
+                }
+            }
         }
 
     }

@@ -44,17 +44,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="DellMechanicalDBDataSet1.cs">
+      <DependentUpon>DellMechanicalDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DellMechanicalDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DellMechanicalDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="InitialPrompt.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InitialPrompt.Designer.cs">
       <DependentUpon>InitialPrompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialManagement.Designer.cs">
+      <DependentUpon>MaterialManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="MaterialUserControl.cs">
       <SubType>UserControl</SubType>
@@ -72,11 +86,14 @@
     <Compile Include="SectionsUserControl.Designer.cs">
       <DependentUpon>SectionsUserControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InitialPrompt.resx">
       <DependentUpon>InitialPrompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialManagement.resx">
+      <DependentUpon>MaterialManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MaterialUserControl.resx">
       <DependentUpon>MaterialUserControl.cs</DependentUpon>
@@ -93,6 +110,17 @@
     <EmbeddedResource Include="SectionsUserControl.resx">
       <DependentUpon>SectionsUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DellMechanicalDBDataSet1.xsc">
+      <DependentUpon>DellMechanicalDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DellMechanicalDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DellMechanicalDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DellMechanicalDBDataSet1.xss">
+      <DependentUpon>DellMechanicalDBDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

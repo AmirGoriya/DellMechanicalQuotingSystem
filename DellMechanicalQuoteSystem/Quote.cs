@@ -9,10 +9,10 @@ namespace DellMechanicalQuoteSystem
     class Quote
     {
         //holds all the sections in the quote
-        Section[] sections { get; set; }
+        public Section[] sections { get; set; }
 
         //holds the title of the quote
-        string title { get; set; }
+        public string title { get; }
 
         //holds the totals for the quote
         double totalMaterialCost { get;}
@@ -25,5 +25,9 @@ namespace DellMechanicalQuoteSystem
 
         //holds the cost dedeuctions for the quote
         double costDedeductions { get; set; }
+        public Quote(string title)
+        {
+            this.title = title;
+        }
     }
 }
