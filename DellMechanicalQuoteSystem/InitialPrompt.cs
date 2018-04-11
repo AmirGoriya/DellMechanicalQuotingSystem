@@ -20,11 +20,19 @@ namespace DellMechanicalQuoteSystem
 
         private void btnQuote_Click(object sender, EventArgs e)
         {
-            //launches the main quoting form and closes the initialPrompt
-            MainForm mainForm =  new MainForm(txtTitle.Text);
-            this.Hide();
-            mainForm.ShowDialog();
-            this.Close();
+
+            if (txtTitle.Text != "")
+            {
+                //launches the main quoting form and closes the initialPrompt
+                MainForm mainForm = new MainForm(txtTitle.Text);
+                this.Hide();
+                mainForm.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a quote title");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

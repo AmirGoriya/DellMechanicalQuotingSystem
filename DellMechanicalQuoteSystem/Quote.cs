@@ -9,25 +9,47 @@ namespace DellMechanicalQuoteSystem
     class Quote
     {
         //holds all the sections in the quote
-        public Section[] sections { get; set; }
+        private List<Section> _sections = new List<Section>();
+        public List<Section> sections
+        {
+            get { return _sections; }
+            set { _sections = value; }
+        }
 
         //holds the title of the quote
         public string title { get; }
 
         //holds the totals for the quote
-        double totalMaterialCost { get;}
-        double totalLabourCost { get; }
-        double totalLabourHours { get;}
-        double totalCost { get; }
+        public double totalMaterialCost { get; private set; }
+        public double totalLabourCost { get; private set; }
+        public double totalLabourHours { get; private set; }
+        public double totalCost { get; private set; }
 
         //holds the extra costs for the quote
-        double extraCosts { get; set; }
+        public double extraCosts { get; set; }
 
         //holds the cost dedeuctions for the quote
         double costDedeductions { get; set; }
         public Quote(string title)
         {
             this.title = title;
+        }
+
+        public void calcTotals()
+        {
+            //resets the totals
+            totalLabourCost = 0;
+            totalMaterialCost = 0;
+            totalCost = 0;
+
+            foreach(Section sec in sections)
+            {
+                totalMaterialCost += sec.totalMaterialCost;
+                totalLabourCost += sec.totalLabourCost;
+                totalCost += sec.totalCost;
+
+            }
+
         }
     }
 }
